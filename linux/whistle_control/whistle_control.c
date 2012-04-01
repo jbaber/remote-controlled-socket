@@ -141,7 +141,7 @@ void fft_analyze(unsigned char *buf, int length)
 	}
 
 	//check if the ratio between best and 2nd best maximum exceeds our requirements
-	if(max / oldmax > UNIQUENESS && maxpos > 10 && maxpos < 120)
+	if(max / oldmax > UNIQUENESS && maxpos > 10 && maxpos < length/2) //length / 2 is the nyquist frequency
 	{
 		printf("%d\t%f\n", maxpos, max/oldmax);
 
