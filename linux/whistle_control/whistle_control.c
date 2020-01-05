@@ -154,7 +154,7 @@ void fft_analyze(unsigned char *buf, int length)
 
 
 
-main (int argc, char *argv[])
+int main (int argc, char *argv[])
 {
 	int i;
 	int err;
